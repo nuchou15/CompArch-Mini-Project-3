@@ -19,6 +19,7 @@ module next_gen #(
 
     initial begin
         $readmemh(SEED_FILE, seed_mem); // read initial pattern file
+        $display("Loaded seed file %s: %h", SEED_FILE, seed_mem[0]);
     end
 
     // check if initial seed loaded
